@@ -1,0 +1,63 @@
+.register-page {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  @include d-flex;
+  background-image: url('@/assets/ticket-it/images/login-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow-y: auto;
+  .register-middle-area {
+    margin: auto;
+    max-width: 800px;
+    background: $white;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+    &::after {
+      content: '';
+      left: 0;
+      right: 0;
+      top: 0;
+      border-radius: 8px;
+      bottom: 0;
+      position: absolute;
+      z-index: -3;
+      background: linear-gradient(#cbcbcb 30%, $white);
+      background: -webkit-linear-gradient(#cbcbcb 30%, $white);
+    }
+    &::before {
+      content: '';
+      left: 1px;
+      right: 1px;
+      top: 1px;
+      border-radius: 8px;
+      bottom: 0;
+      position: absolute;
+      z-index: -1;
+      background: $white;
+    }
+
+    .headline {
+      font-size: 22px;
+      color: #143358;
+      font-family: 'Avenir Next Condensed';
+      font-weight: 600;
+    }
+    .subline {
+      font-size: 14px;
+      color: $content-light;
+    }
+    .regiter_footer {
+      .already_account {
+        font-size: 14px;
+        a {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

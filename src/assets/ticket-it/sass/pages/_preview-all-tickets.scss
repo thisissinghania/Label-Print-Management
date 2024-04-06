@@ -1,0 +1,86 @@
+.preview_ticket_area {
+  .preview_left {
+    .shadow_block {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      .image {
+        line-height: 0px;
+      }
+      h3 {
+        font-size: 18px;
+        & + h3 {
+          color: $light;
+        }
+      }
+    }
+  }
+  .preview_right {
+    .preview-ticket-select {
+      select {
+        height: 50px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.border-top {
+  border-top: 1px solid $border;
+  .v-pagination__item,
+  .v-pagination__prev,
+  .v-pagination__next {
+    margin: 0px;
+    button {
+      color: #555770;
+    }
+  }
+  .v-pagination__prev {
+    position: relative;
+    .v-btn__content {
+      display: none;
+    }
+    .v-btn--icon {
+      width: auto;
+      padding: 10px;
+      &::before {
+        content: 'Prev';
+        text-transform: capitalize;
+        letter-spacing: 0;
+        font-size: 16px;
+      }
+    }
+  }
+  .v-pagination__next {
+    position: relative;
+    .v-btn__content {
+      display: none;
+    }
+    .v-btn--icon {
+      width: auto;
+      padding: 10px;
+      &::before {
+        content: 'Next';
+        text-transform: capitalize;
+        letter-spacing: 0;
+        font-size: 16px;
+      }
+    }
+  }
+  .v-pagination__item {
+    &.v-pagination__item--is-active {
+      .v-btn--icon {
+        background: $secondary;
+        color: $white;
+      }
+    }
+    .v-btn--icon.v-btn--disabled {
+      .v-btn__content {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 10px;
+        position: relative;
+        top: -4px;
+      }
+    }
+  }
+}

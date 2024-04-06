@@ -1,0 +1,143 @@
+.panel-header {
+  height: 70px;
+  background: $dark-primary;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  @media all and (max-width: 991px) {
+    height: 60px;
+  }
+  @include d-flex;
+  .left-header {
+    @include d-flex;
+    @include align-center;
+    .switch-panel {
+      .switch-panel-click {
+        @include d-flex;
+        @include align-center;
+        height: 70px;
+        background: $secondary;
+        padding: 0 20px;
+        @media all and (max-width: 991px) {
+          height: 60px;
+          padding: 0 12px;
+        }
+        cursor: pointer;
+        > p {
+          color: $white;
+          font-size: 18px;
+          font-weight: 400;
+          margin-left: 15px;
+          position: relative;
+          top: 2px;
+          @media all and (max-width: 991px) {
+            display: none;
+          }
+        }
+      }
+    }
+    .home-icon {
+      padding: 0 20px;
+      @media all and (max-width: 991px) {
+        padding: 0 12px;
+      }
+      a {
+        @include d-flex;
+        @include align-center;
+      }
+    }
+  }
+  .center-header {
+    @include d-flex;
+    @include align-center;
+    @include justify-center;
+    img {
+      @media all and (max-width: 991px) {
+        max-width: 130px;
+      }
+    }
+  }
+  .right-header {
+    padding: 0 20px 0 0;
+    @include d-flex;
+    @include align-center;
+    @include justify-end;
+    @media all and (max-width: 991px) {
+      padding: 0 12px 0 0;
+    }
+    .client-logo {
+      background: #fff;
+      padding: 6px 10px;
+      border-radius: 0;
+      height: 70px;
+      @include d-flex;
+      @include align-center;
+      @include justify-center;
+      @media all and (max-width: 800px) {
+        display: none;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        max-height: 56px;
+      }
+    }
+    button {
+      background: $white;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      @include d-flex;
+      @include align-center;
+      @include justify-center;
+      position: relative;
+      @media all and (max-width: 991px) {
+        width: 36px;
+        height: 36px;
+      }
+      .all-settings {
+        position: absolute;
+        right: 0;
+        min-width: 233px;
+        background: $white;
+        top: 55px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        @media all and (max-width: 991px) {
+          top: 48px;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          border: 10px solid;
+          border-color: transparent transparent $white;
+          top: -20px;
+          right: 10px;
+          @media all and (max-width: 991px) {
+            top: -16px;
+            border-width: 8px;
+          }
+        }
+        a {
+          display: block;
+          font-size: 14px;
+          color: $content;
+          @include d-flex;
+          @include align-center;
+          padding: 12px 15px;
+          font-weight: 500;
+          span {
+            line-height: 0;
+            margin-right: 10px;
+            width: 20px;
+            margin-top: -2px;
+          }
+          & + a {
+            border-top: 1px solid $border;
+          }
+        }
+      }
+    }
+  }
+}

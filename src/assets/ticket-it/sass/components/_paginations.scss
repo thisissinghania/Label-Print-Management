@@ -1,0 +1,38 @@
+.paginations {
+  font-size: 16px;
+  font-weight: 700;
+  color: #414141;
+  .select-pagination {
+    margin-left: 10px;
+    background-image: url('@/assets/ticket-it/images/row-items.svg');
+    background-position: center right;
+    background-size: 12px;
+    width: 50px;
+    select {
+      width: 100%;
+      color: #414141;
+      outline: none;
+      border: none;
+      padding-right: 15px !important;
+    }
+  }
+  .prev-next {
+    .prev,
+    .next {
+      width: 30px;
+      text-align: center;
+      @media all and (max-width: 599px) {
+        width: 20px;
+      }
+    }
+    > span {
+      @media all and (max-width: 599px) {
+        margin-right: 10px;
+        display: block;
+      }
+    }
+    button[disabled] {
+      opacity: 0.5;
+    }
+  }
+}

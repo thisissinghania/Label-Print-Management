@@ -1,0 +1,183 @@
+.custom-table-design {
+  width: 100%;
+  border-collapse: collapse;
+  &.filter-table {
+    thead {
+      tr {
+        th {
+          background: $secondary;
+          color: $white;
+        }
+      }
+    }
+  }
+  thead {
+    tr {
+      th {
+        background: $grey;
+        height: 48px;
+        text-align: left;
+        padding: 10px 12px;
+        font-size: 16px;
+        color: $secondary;
+        white-space: nowrap;
+        .table_drop_icon {
+          width: 50px;
+          @include d-flex;
+          @include align-center;
+          @include justify-center;
+          outline: none;
+          img {
+            max-width: 8px;
+          }
+          &.open-data {
+            img {
+              @include transform(rotate(90deg));
+            }
+          }
+        }
+        .custom_check {
+          line-height: 20px;
+          @include d-flex;
+          input {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+        font-size: 16px;
+        color: $secondary;
+        white-space: nowrap;
+        padding: 10px;
+        &.grey-bg {
+          background: #eaf2ff;
+        }
+        &.grey-bg ~ td {
+          background: #eaf2ff;
+        }
+        .product_img {
+          img {
+            max-width: 50px;
+          }
+        }
+        .table_drop_icon {
+          width: 50px;
+          @include d-flex;
+          @include align-center;
+          @include justify-center;
+          outline: none;
+          img {
+            max-width: 8px;
+          }
+          &.open-data {
+            img {
+              @include transform(rotate(90deg));
+            }
+          }
+        }
+        .custom_check {
+          line-height: 20px;
+          @include d-flex;
+          input {
+            width: 18px;
+            height: 18px;
+          }
+        }
+        .fixed-width {
+          width: 40px;
+          height: 40px;
+        }
+        .switch_cta {
+          .switch-check {
+            width: 40px;
+            height: 18px;
+            background: $grey;
+            border-radius: 100px;
+            display: block;
+            position: relative;
+            @include transition(0.3s);
+            &::after {
+              content: '';
+              position: absolute;
+              width: 16px;
+              height: 16px;
+              background: $green;
+              border-radius: 100px;
+              top: 1px;
+              left: 1px;
+              @include transition(0.3s);
+            }
+          }
+          input {
+            display: none;
+            &:checked {
+              & + .switch-check {
+                background: $green;
+                &::after {
+                  background: $white;
+                  left: 23px;
+                }
+              }
+            }
+          }
+        }
+        .sub-table-data {
+          border: 1px solid $border;
+          margin: -1px 0;
+          position: relative;
+          z-index: 1;
+          .single-sub-data {
+            position: relative;
+            margin: -1px 0;
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 20px;
+              right: 20px;
+              height: 1px;
+              background: $border;
+            }
+            &::before {
+              content: '';
+              position: absolute;
+              bottom: 20px;
+              left: -1px;
+              top: 20px;
+              width: 1px;
+              background: $border;
+            }
+            .single-title {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      & + tr {
+        td {
+          border-top: 1px solid $border;
+        }
+      }
+      &.checked_row {
+        background: #91caf4;
+        .grey-bg {
+          background: #91caf4;
+        }
+        .grey-bg ~ td {
+          background: #91caf4;
+        }
+      }
+      &.checked_row_child {
+        background: #d4edff;
+      }
+    }
+    & + tbody {
+      border-top: 1px solid $border;
+    }
+  }
+}

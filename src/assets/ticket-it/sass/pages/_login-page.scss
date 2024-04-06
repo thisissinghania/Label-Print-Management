@@ -1,0 +1,123 @@
+.login-page {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  @include d-flex;
+  background-image: url('@/assets/ticket-it/images/login-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow-y: auto;
+  .login-middle-area {
+    margin: auto;
+    max-width: 990px;
+    background: $white;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+    &::after {
+      content: '';
+      left: 0;
+      right: 0;
+      top: 0;
+      border-radius: 8px;
+      bottom: 0;
+      position: absolute;
+      z-index: -3;
+      background: linear-gradient(#cbcbcb 30%, $white);
+      background: -webkit-linear-gradient(#cbcbcb 30%, $white);
+    }
+    &::before {
+      content: '';
+      left: 1px;
+      right: 1px;
+      top: 1px;
+      border-radius: 8px;
+      bottom: 0;
+      position: absolute;
+      z-index: -1;
+      background: $white;
+    }
+    .login-divider {
+      .left-login-part {
+        .headline {
+          font-size: 22px;
+          color: $secondary;
+          font-family: 'Avenir Next Condensed';
+          font-weight: 600;
+        }
+        .content {
+          font-size: 16px;
+          color: $content-light;
+        }
+      }
+      .right-login-part {
+        border-left: 2px dotted #cbcbcb;
+        position: relative;
+        &::after {
+          content: '';
+          top: -50px;
+          background-image: url('@/assets/ticket-it/images/login-bg.jpg');
+          background-position: center;
+          width: 90px;
+          height: 90px;
+          position: absolute;
+          border-radius: 100px;
+          left: -46px;
+          border: 1px solid #cbcbcb;
+          @include transform(rotate(-45deg));
+          @media all and (max-width: 959px) {
+            display: none;
+          }
+        }
+        &::before {
+          content: '';
+          bottom: -50px;
+          background-image: url('@/assets/ticket-it/images/login-bg.jpg');
+          background-position: center;
+          width: 90px;
+          height: 90px;
+          position: absolute;
+          border-radius: 100px;
+          left: -46px;
+          border: 1px solid #cbcbcb;
+          @include transform(rotate(-45deg));
+          @media all and (max-width: 959px) {
+            display: none;
+          }
+        }
+        .headline {
+          font-size: 22px;
+          color: $secondary;
+          font-family: 'Avenir Next Condensed';
+          font-weight: 600;
+        }
+        .subline {
+          font-size: 14px;
+          color: $content-light;
+        }
+        .form-area {
+          .remember-me {
+            @include d-flex;
+            @include align-center;
+            font-size: 14px;
+            color: $secondary;
+            input {
+              margin-right: 8px;
+              margin-top: -2px;
+            }
+          }
+          .forgot-password {
+            text-align: right;
+            font-size: 14px;
+            a {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}

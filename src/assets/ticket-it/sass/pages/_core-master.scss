@@ -1,0 +1,40 @@
+.core_master {
+  .shadow_block {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    .border-bottom{
+        border-bottom: 1px solid $border;
+    }
+    .border-left{
+        border-left: 1px solid $border;
+        @media all and (max-width: 959px){
+            border: none;
+        }
+    }
+    .master_detail {
+      li {
+        display: grid;
+        grid-template-columns: 180px auto;
+        font-size: 16px;
+        @media all and (max-width: 480px){
+            grid-template-columns: auto;
+        }
+        & + li {
+          margin-top: 8px;
+        }
+        span {
+          color: $secondary;
+          font-weight: 600;
+        }
+        p {
+          color: $secondary;
+        }
+      }
+    }
+    .content {
+      p {
+        color: $secondary;
+      }
+    }
+  }
+}

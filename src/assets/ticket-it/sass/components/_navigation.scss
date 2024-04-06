@@ -1,0 +1,36 @@
+.navigation-bar {
+  background: $grey;
+  height: 55px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  &::-webkit-scrollbar{
+    height: 4px;
+  }
+  &::-webkit-scrollbar-track{
+    background: $border;
+  }
+  &::-webkit-scrollbar-thumb{
+    background: $secondary;
+  }
+  > ul {
+    @include d-flex;
+    > li {
+      > a {
+        @include d-flex;
+        @include align-center;
+        height: 55px;
+        font-size: 16px;
+        color: $secondary;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 0 25px;
+        border-bottom: 2px solid transparent;
+        white-space: nowrap;
+        &.router-link-active{
+          color: $primary;
+          border-color: $primary;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+// 
+// All mixins are going to declare here
+// 
+
+@mixin d-flex() {
+    display: flex;
+    display: -webkit-flex;
+}
+@mixin align-start() {
+    align-items: flex-start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -webkit-align-content: flex-start;
+}
+@mixin align-center() {
+    align-items: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -webkit-align-content: center;
+}
+@mixin align-end() {
+    align-items: flex-end;
+    align-content: flex-end;
+    -webkit-align-items: flex-end;
+    -webkit-align-content: flex-end;
+}
+@mixin align-between() {
+    align-items:  space-between;
+    align-content:  space-between;
+    -webkit-align-items:  space-between;
+    -webkit-align-content:  space-between;
+}
+@mixin justify-start() {
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    justify-items: flex-start;
+    -webkit-justify-items: flex-start;
+}
+@mixin justify-between() {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    justify-items: space-between;
+    -webkit-justify-items: space-between;
+}
+@mixin justify-center() {
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-items: center;
+    -webkit-justify-items: center;
+}
+@mixin justify-end() {
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    justify-items: flex-end;
+    -webkit-justify-items: flex-end;
+}
+
+@mixin flex-wrap() {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+@mixin flex-nowrap() {
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+}
+
+@mixin transition($transition) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+@mixin transform($transform) {
+    -moz-transform:    $transform;
+    -o-transform:      $transform;
+    -webkit-transform: $transform;
+    transform:         $transform;
+}

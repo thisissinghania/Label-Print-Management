@@ -1,0 +1,200 @@
+.package-title {
+  a {
+    background: rgb(237 6 119 / 5%);
+    border: 1px solid #ffc6e2;
+    border-radius: 5px;
+    @include d-flex;
+    @include align-center;
+
+    .pricing-headline {
+      width: 100%;
+      h3 {
+        color: $primary;
+      }
+      p {
+        color: $secondary;
+      }
+    }
+    .arrow-right {
+      line-height: 0px;
+      width: 30px;
+      height: 30px;
+      @include d-flex;
+      @include align-center;
+      @include justify-center;
+      background: $white;
+      border-radius: 100px;
+      margin-right: 10px;
+      border: 1px solid #ffc6e2;
+      padding-left: 3px;
+      img {
+        max-width: 7px;
+      }
+    }
+  }
+}
+
+.pricing-page-back {
+  border-right: 1px solid #ccc;
+  @include d-flex;
+  @include align-center;
+  a {
+    @include d-flex;
+    @include align-center;
+    line-height: 0px;
+    font-size: 16px;
+    color: $secondary;
+    img {
+      margin-right: 7px;
+      margin-top: -3px;
+      max-width: 7px;
+    }
+  }
+}
+
+.package-block {
+  position: relative;
+  border-radius: 10px;
+  background: #0185a0;
+  height: 100%;
+  &.secondary-bg {
+    background: $secondary;
+  }
+  .title {
+    @include d-flex;
+    @include align-center;
+    @include justify-between;
+    font-size: 24px;
+    font-weight: 600;
+    color: $white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    @media all and (max-width: 1270px) {
+      @include flex-wrap;
+    }
+    .choose-cta {
+      @media all and (max-width: 1270px) {
+        width: 100%;
+        margin-top: 15px;
+      }
+      .activated-plan {
+        font-size: 18px;
+        img {
+          margin: 0 0 0 10px;
+        }
+      }
+    }
+    img {
+      max-width: 50px;
+      margin-right: 10px;
+    }
+  }
+  .price {
+    font-size: 36px;
+    font-weight: bold;
+    color: $white;
+    position: relative;
+    span {
+      font-size: 16px;
+    }
+  }
+  .features {
+    margin-top: 10px;
+    ul {
+      li {
+        color: $white;
+        font-size: 14px;
+        position: relative;
+        padding-left: 30px;
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 1px;
+          width: 16px;
+          height: 16px;
+          background: $white;
+          border-radius: 100px;
+        }
+        &::after {
+          content: '';
+          width: 8px;
+          height: 4px;
+          border-left: 1px solid #000;
+          border-bottom: 1px solid #000;
+          position: absolute;
+          left: 4px;
+          z-index: 9;
+          top: 6px;
+          @include transform(rotate(-45deg));
+        }
+        & + li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.single-card {
+  @include d-flex;
+  background: rgb(250, 250, 250);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e7eaef;
+  position: relative;
+  margin-bottom: 15px;
+  height: 80px;
+  overflow: hidden;
+  cursor: pointer;
+  .primary-card {
+    position: absolute;
+    left: 0;
+    right: 60px;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    @include d-flex;
+    @include align-center;
+    @include justify-end;
+    img {
+      max-width: 28px;
+    }
+  }
+  .image {
+    max-width: 80px;
+    @include d-flex;
+    @include align-center;
+    margin-right: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff;
+  }
+  .card-detail {
+    @include d-flex;
+    @include align-center;
+    @include flex-wrap;
+    h3 {
+      font-size: 18px;
+      line-height: 22px;
+      width: 100%;
+    }
+    span {
+      font-size: 14px;
+      opacity: 0.5;
+    }
+  }
+  .card-del {
+    @include d-flex;
+    @include align-center;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    @include transform(translateY(-50%));
+    .custom_fill_cta {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

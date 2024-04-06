@@ -1,0 +1,17 @@
+
+// Variables initialization
+@import "variables";
+
+// Mixins initialization
+@import "mixins";
+
+// fonts initialization
+@import "fonts";
+
+// Global initialization
+@import "global";
+
+
+// All pages initialization
+@import "pages/all-pages.scss";
+@import "components/all-components.scss";

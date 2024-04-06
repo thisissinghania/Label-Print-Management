@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('@/assets/ticket-it/fonts/MuseoSans-300.eot');
+    src: url('@/assets/ticket-it/fonts/MuseoSans-300.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/ticket-it/fonts/MuseoSans-300.woff2') format('woff2'),
+        url('@/assets/ticket-it/fonts/MuseoSans-300.woff') format('woff'),
+        url('@/assets/ticket-it/fonts/MuseoSans-300.ttf') format('truetype'),
+        url('@/assets/ticket-it/fonts/MuseoSans-300.svg#MuseoSans-300') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('@/assets/ticket-it/fonts/MuseoSans-700.eot');
+    src: url('@/assets/ticket-it/fonts/MuseoSans-700.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/ticket-it/fonts/MuseoSans-700.woff2') format('woff2'),
+        url('@/assets/ticket-it/fonts/MuseoSans-700.woff') format('woff'),
+        url('@/assets/ticket-it/fonts/MuseoSans-700.ttf') format('truetype'),
+        url('@/assets/ticket-it/fonts/MuseoSans-700.svg#MuseoSans-700') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('@/assets/ticket-it/fonts/MuseoSans-900.eot');
+    src: url('@/assets/ticket-it/fonts/MuseoSans-900.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/ticket-it/fonts/MuseoSans-900.woff2') format('woff2'),
+        url('@/assets/ticket-it/fonts/MuseoSans-900.woff') format('woff'),
+        url('@/assets/ticket-it/fonts/MuseoSans-900.ttf') format('truetype'),
+        url('@/assets/ticket-it/fonts/MuseoSans-900.svg#MuseoSans-900') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('@/assets/ticket-it/fonts/MuseoSans-500.eot');
+    src: url('@/assets/ticket-it/fonts/MuseoSans-500.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/ticket-it/fonts/MuseoSans-500.woff2') format('woff2'),
+        url('@/assets/ticket-it/fonts/MuseoSans-500.woff') format('woff'),
+        url('@/assets/ticket-it/fonts/MuseoSans-500.ttf') format('truetype'),
+        url('@/assets/ticket-it/fonts/MuseoSans-500.svg#MuseoSans-500') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('@/assets/ticket-it/fonts/MuseoSans-100.eot');
+    src: url('@/assets/ticket-it/fonts/MuseoSans-100.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/ticket-it/fonts/MuseoSans-100.woff2') format('woff2'),
+        url('@/assets/ticket-it/fonts/MuseoSans-100.woff') format('woff'),
+        url('@/assets/ticket-it/fonts/MuseoSans-100.ttf') format('truetype'),
+        url('@/assets/ticket-it/fonts/MuseoSans-100.svg#MuseoSans-100') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+// second font============================
+
+
+
+@font-face {
+    font-family: 'Avenir Next Condensed';
+    src: url('@/assets/ticket-it/fonts/AvenirNextCondensed-Heavy.eot');
+    src: url('@/assets/ticket-it/fonts/AvenirNextCondensed-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-Heavy.woff2') format('woff2'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-Heavy.woff') format('woff'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-Heavy.ttf') format('truetype'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-Heavy.svg#AvenirNextCondensed-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next Condensed';
+    src: url('@/assets/ticket-it/fonts/AvenirNextCondensed-Bold.eot');
+    src: url('@/assets/ticket-it/fonts/AvenirNextCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-Bold.woff2') format('woff2'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-Bold.woff') format('woff'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-Bold.ttf') format('truetype'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-Bold.svg#AvenirNextCondensed-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next Condensed Demi';
+    src: url('@/assets/ticket-it/fonts/AvenirNextCondensed-DemiBold.eot');
+    src: url('@/assets/ticket-it/fonts/AvenirNextCondensed-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-DemiBold.woff2') format('woff2'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-DemiBold.woff') format('woff'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-DemiBold.ttf') format('truetype'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-DemiBold.svg#AvenirNextCondensed-DemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next Condensed';
+    src: url('@/assets/ticket-it/fonts/AvenirNextCondensed-Medium.eot');
+    src: url('@/assets/ticket-it/fonts/AvenirNextCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-Medium.woff2') format('woff2'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-Medium.woff') format('woff'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-Medium.ttf') format('truetype'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-Medium.svg#AvenirNextCondensed-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next Condensed';
+    src: url('@/assets/ticket-it/fonts/AvenirNextCondensed-Regular.eot');
+    src: url('@/assets/ticket-it/fonts/AvenirNextCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-Regular.woff2') format('woff2'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-Regular.woff') format('woff'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-Regular.ttf') format('truetype'),
+        url('@/assets/ticket-it/fonts/AvenirNextCondensed-Regular.svg#AvenirNextCondensed-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+

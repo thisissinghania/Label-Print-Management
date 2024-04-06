@@ -1,0 +1,32 @@
+.tabs_navigation {
+  .v-slide-group {
+    height: 55px;
+    overflow-x: auto;
+    .v-btn {
+      height: 55px;
+      padding: 0 30px;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0;
+      color: $secondary;
+      &.v-slide-group-item--active {
+        color: $primary;
+      }
+      .v-btn__overlay {
+        display: none;
+      }
+      .v-btn__underlay {
+        display: none;
+      }
+      .v-ripple__container {
+        display: none;
+      }
+      .v-btn__content {
+        .v-tab__slider {
+          background: $primary !important;
+        }
+      }
+    }
+  }
+}

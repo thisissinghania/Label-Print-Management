@@ -1,0 +1,159 @@
+.panel-area {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  @include d-flex;
+  background-image: url('@/assets/ticket-it/images/background.jpg');
+  background-size: cover;
+  background-position: bottom -1px center;
+  overflow-y: auto;
+  .pannel-middle-area {
+    margin: auto;
+    max-width: 1200px;
+    .panel-list-parent {
+      .single-panel {
+        width: 233px;
+        height: 233px;
+        border: 10px solid $white;
+        border-radius: 100%;
+        background: #dcdcdc;
+        margin: 20px auto;
+        position: relative;
+        @include transition(0.5s);
+        &:hover {
+          @include transition(0.5s);
+          @include transform(scale(1.1));
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+        }
+        a {
+          width: 100%;
+          height: 100%;
+          display: block;
+          border-radius: 100%;
+          @include d-flex;
+          @include align-center;
+          @include justify-center;
+          @include flex-wrap;
+          font-size: 18px;
+          color: $white;
+          text-transform: capitalize;
+          font-weight: 600;
+          span {
+            width: 43px;
+            height: 43px;
+            background: $white;
+            border-radius: 100px;
+            margin-left: 10px;
+            @include d-flex;
+            @include align-center;
+            @include justify-center;
+            text-transform: uppercase;
+            font-weight: 900;
+          }
+          p {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-top: 7px;
+            font-size: 16px;
+          }
+          .check-mark {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 55px;
+            height: 55px;
+            background: #d9d9d9;
+            border-radius: 100px;
+            border: 5px solid $white;
+            @include d-flex;
+            @include align-center;
+            @include justify-center;
+            color: #a4a4a4;
+            font-weight: 600;
+            &.checked {
+              color: #00a843;
+            }
+          }
+        }
+      }
+      &:nth-child(1) {
+        .single-panel {
+          a {
+            background: #eb2b7b;
+            span {
+              color: #eb2b7b;
+            }
+          }
+        }
+      }
+      &:nth-child(2) {
+        .single-panel {
+          a {
+            background: #e5702a;
+            span {
+              color: #e5702a;
+            }
+          }
+        }
+      }
+      &:nth-child(3) {
+        .single-panel {
+          a {
+            background: #773078;
+            span {
+              color: #773078;
+            }
+          }
+        }
+      }
+      &:nth-child(4) {
+        .single-panel {
+          a {
+            background: #009e8e;
+            span {
+              color: #009e8e;
+            }
+          }
+        }
+      }
+      &:nth-child(5) {
+        .single-panel {
+          a {
+            background: #84bf41;
+            span {
+              color: #009e8e;
+            }
+          }
+        }
+      }
+      &:nth-child(6) {
+        .single-panel {
+          a {
+            background: #35a0ce;
+            span {
+              color: #35a0ce;
+            }
+          }
+        }
+      }
+      &:nth-child(7),
+      &:nth-child(8) {
+        .single-panel {
+          a {
+            background: #dcdcdc;
+            color: #9f9f9f;
+            span {
+              background: #9f9f9f;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

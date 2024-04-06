@@ -1,0 +1,157 @@
+.sidebar-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  cursor: default;
+  .backdrop{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .sidebar-inside {
+    background: $white;
+    position: fixed;
+    top: 0;
+    width: 320px;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    z-index: 9;
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 100px;
+      background-color: $grey;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $secondary;
+      border-radius: 100px;
+    }
+    .sidebar-top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 320px;
+      @include d-flex;
+      @include align-center;
+      @include justify-between;
+      height: 70px;
+      padding: 15px;
+      border-bottom: 1px solid $grey;
+      background: $white;
+      z-index: 99;
+      .switch-title {
+        @include d-flex;
+        @include align-center;
+        font-size: 18px;
+        img {
+          margin-right: 15px;
+        }
+        > p {
+          top: 2px;
+          position: relative;
+          font-weight: 600;
+        }
+      }
+      .close {
+        width: 19px;
+        height: 19px;
+        line-height: 0;
+      }
+    }
+    .panels-listing {
+      margin-top: 70px;
+      > ul {
+        > li {
+          list-style-type: none;
+          > a {
+            padding: 10px 15px;
+            height: 64px;
+            border-bottom: 1px solid $grey;
+            @include d-flex;
+            @include align-center;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: $nav-light;
+            position: relative;
+            > span {
+              width: 34px;
+              height: 34px;
+              background: $nav-light;
+              border-radius: 100px;
+              color: $white;
+              text-transform: uppercase;
+              display: block;
+              text-align: center;
+              line-height: 40px;
+              margin-left: 10px;
+            }
+            > img{
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                @include transform(translateY(-50%))
+            }
+          }
+          &:nth-child(1){
+            > a{
+                color: $primary;
+                > span{
+                    background: $primary;
+                }
+            }
+          }
+          &:nth-child(2){
+            > a{
+                color: #E5702A;
+                > span{
+                    background: #E5702A;
+                }
+            }
+          }
+          &:nth-child(3){
+            > a{
+                color: #773078;
+                > span{
+                    background: #773078;
+                }
+            }
+          }
+          &:nth-child(4){
+            > a{
+                color: #009E8E;
+                > span{
+                    background: #009E8E;
+                }
+            }
+          }
+          &:nth-child(5){
+            > a{
+                color: #84BF41;
+                > span{
+                    background: #84BF41;
+                }
+            }
+          }
+          &:nth-child(6){
+            > a{
+                color: #35A0CE;
+                > span{
+                    background: #35A0CE;
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+}

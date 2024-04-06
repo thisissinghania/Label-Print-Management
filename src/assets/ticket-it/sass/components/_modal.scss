@@ -1,0 +1,65 @@
+.modal_parent {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow-y: auto;
+  @include d-flex;
+  z-index: 99;
+  padding: 30px 12px;
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+  &::-moz-scrollbar {
+    width: 0px;
+  }
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+  }
+  .modal_content {
+    z-index: 1;
+    position: relative;
+    margin: auto;
+    background: $white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    .modal_title {
+      background: #384f5a;
+      @include d-flex;
+      @include align-center;
+      @include justify-between;
+      padding: 15px;
+      border-radius: 5px 5px 0 0;
+      height: 56px;
+      h3 {
+        font-size: 22px;
+        line-height: 22px;
+        color: $white;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .close {
+        line-height: 0px;
+        margin-left: 15px;
+      }
+    }
+  }
+  .preview_area {
+    border: 1px solid #e4e4eb;
+    line-height: 0px;
+  }
+}
+
+.animate-rotate {
+  max-width: 170px;
+  position: relative;
+  top: 17px;
+}
